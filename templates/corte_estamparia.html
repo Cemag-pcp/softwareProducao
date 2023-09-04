@@ -1,0 +1,384 @@
+{% extends "index.html" %}
+{% block body %}
+
+<main class="principal">
+    <div class="table">
+        <section class="table__header">
+            <h1>Resumo</h1>
+        </section>
+        <table class="table3" style="display: flex; justify-content: flex-start; padding: 0;">
+            <thead>
+              <tr class="container filter-wrapper2 filters">
+                <th>Dia
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+              </tr>
+
+            </thead>
+        </table>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="cabecalho">Dia</th>
+                        <th class="cabecalho">Programada</th>
+                        <th class="cabecalho">Corte</th>
+                        <th class="cabecalho">Virada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>01/09</td>
+                        <td>100%</td>
+                        <td>80%</td>
+                        <td>30%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="table">
+        <section class="table__header">
+            <h1>Ordem de Produção</h1>
+        </section>
+        <table class="table3" style="display: flex; justify-content: center; padding: 0;">
+            <thead>
+              <tr class="container filter-wrapper2 filters">
+                <th>Dia
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+                <th>Peça
+                    <select class="form-control form-control" id="programada-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+                <th>Conj.
+                    <select class="form-control form-control" id="corte-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+              </tr>
+
+            </thead>
+        </table>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="cabecalho">Código</th>
+                        <th class="cabecalho">Qtd. Programada</th>
+                        <th class="cabecalho">Qtd. Estoque</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="table">
+        <section class="table__header">
+            <h1>Consulta</h1>
+        </section>
+        <table class="table3" style="display: flex; flex-wrap: wrap; justify-content: center; padding: 0;">
+            <thead>
+              <tr class="container filter-wrapper2 filters" style="display: flex; flex-wrap: wrap; justify-content: center; padding: 0;" >
+                <th>Peça
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+                <th>Qtd. Programada
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+                <th>Qtd. Estoque
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+                <th>Até dia
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+              </tr>
+            </thead>
+        </table>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="cabecalho">Peça</th>
+                        <th class="cabecalho">Qtd. Programada</th>
+                        <th class="cabecalho">Qtd. Estoque</th>
+                        <th class="cabecalho">Até dia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>01/09</td>
+                    </tr>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>01/09</td>
+                    </tr>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>01/09</td>
+                    </tr>
+                    <tr>
+                        <td>030317</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>01/09</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="table">
+        <section class="table__header">
+            <h1>Estoque de Chapas</h1>
+        </section>
+        <table class="table3" style="display: flex; justify-content: center; padding: 0;">
+            <thead>
+              <tr class="container filter-wrapper2 filters">
+                <th>Código - Descrição
+                    <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+                <th>Qtd.Estoque
+                    <select class="form-control form-control" id="programada-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                        <option value="">Todos</option>
+                        <option>Alto</option>
+                        <option>Médio</option>
+                        <option>Baixo</option>
+                    </select>
+                </th>
+              </tr>
+
+            </thead>
+        </table>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="cabecalho">Código - Descrição</th>
+                        <th class="cabecalho">Qtd.Estoque</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>030317 - Descrição</td>
+                        <td>2</td>                      
+                    </tr>
+                    <tr>
+                        <td>030317 - Descrição</td>
+                        <td>2</td>                                             
+                    </tr>
+                    <tr>
+                        <td>030317 - Descrição</td>
+                        <td>2</td>                                            
+                    </tr>
+                    <tr>
+                        <td>030317 - Descrição</td>
+                        <td>2</td>                                           
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+        <div class="table">
+            <section class="table__header">
+                <h1>Visão Geral das Cargas</h1>
+            </section>
+            <table class="table3" style="display: flex; justify-content: center; padding: 0;">
+                <thead>
+                  <tr class="container filter-wrapper2 filters">
+                    <th>Datas
+                        <select class="form-control form-control" id="peca-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                            <option value="">Todos</option>
+                            <option>Alto</option>
+                            <option>Médio</option>
+                            <option>Baixo</option>
+                        </select>
+                    </th>
+                    <th>Recursos
+                        <select class="form-control form-control" id="programada-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                            <option value="">Todos</option>
+                            <option>Alto</option>
+                            <option>Médio</option>
+                            <option>Baixo</option>
+                        </select>
+                    </th>
+                    <th>Qtd. Ped.
+                        <select class="form-control form-control" id="corte-filter" style='padding: .375rem .25rem;' name="risco-filter">
+                            <option value="">Todos</option>
+                            <option>Alto</option>
+                            <option>Médio</option>
+                            <option>Baixo</option>
+                        </select>
+                    </th>
+                  </tr>
+    
+                </thead>
+            </table>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="cabecalho">Datas</th>
+                            <th class="cabecalho">Recursos</th>
+                            <th class="cabecalho">Qtd. Ped.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05/07/2023</td>
+                            <td>459574 - Tambor Freio - Eixo F6F5</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>05/07/2023</td>
+                            <td>459574 - Tambor Freio - Eixo F6F5</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+</main>
+
+{% endblock %}

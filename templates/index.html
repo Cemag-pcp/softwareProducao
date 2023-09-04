@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style.css">
+    <link rel="shortcut icon" type="imagex/png" href="static\SELO 50 ANOS ISOLADO_Prancheta 1 - Copia.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/d1807a784c.js" crossorigin="anonymous"></script>
+    <title>Cemag - Produção</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img id="logo" src="static\CEMAGL (1) - Copia.png" alt="logo cemag">
+        </div>
+        <div class="entradas">
+            <input type="text" name="producao" id="producao" value="Produção" disabled>
+            <select name="tipo__app" id="tipo__app" >
+                <option value="" selected disabled hidden></option>  
+                <option value="Corte e Estamparia">Corte e Estamparia</option>  
+                <option value="Solda" >Solda</option>  
+                <option value="Pintura" >Pintura</option>  
+            </select>
+            <a href="/login" class="botao-voltar">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+    
+    <script src="static/javascript/links.js"></script>
+</body>
+</html>
