@@ -57,13 +57,13 @@ nav i:hover{
 
 #producao{
     font-size: 15px;
-    background-color: #cacaca94;
+    background-color: #e0e0e094;
     color: #74747494;
     border-radius: 20px;
     padding: 3px;
     font-weight: bold;
     text-align: center;
-    border: 2px solid #74747494;
+    border: 1.5px solid #74747494;
 }
 
 #tipo__app{
@@ -370,14 +370,14 @@ tbody tr.hide td i{
     #producao {
         display: none;
         font-size: 15px;
-        background-color: #cacaca94;
+        background-color: #e0e0e094;
         color: #74747494;
         border-radius: 20px;
         padding: 3px;
         width: 30%;
         font-weight: bold;
         text-align: center;
-        border: 2px solid #74747494;
+        border: 1.5px solid #74747494;
     }
     
     #tipo__app{

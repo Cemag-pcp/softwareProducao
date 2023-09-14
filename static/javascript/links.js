@@ -20,6 +20,27 @@ select.addEventListener("change", function () {
             break;
         default:
             // Redirecione para uma página padrão, se necessário
-            window.location.href = "/default";
+            window.location.href = "/login";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona o elemento <select>
+    const selectElement = document.getElementById("tipo__app");
+
+    // Verifica a URL atual e define a opção no <select> com base nela
+    switch (window.location.pathname) {
+        case "/":
+            selectElement.value = "Corte e Estamparia";
+            break;
+        case "/solda":
+            selectElement.value = "Solda";
+            break;
+        case "/pintura":
+            selectElement.value = "Pintura";
+            break;
+        default:
+            // Se a URL não corresponder a nenhuma das opções, você pode deixar a seleção padrão (vazio)
+            selectElement.value = "";
     }
 });

@@ -107,17 +107,17 @@
         <section class="table__header">
             <h1>Ordem de Produção</h1>
             <div class="input-group2">
-                <input type="search" placeholder="Filtrar...">
+                <input type="search" placeholder="Filtrar..." disabled>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </section>
         <div class="select-group">
             <select name="ordemproducao" id="ordemproducao" multiple>
-                <option value="1">Chassi 1</option>
-                <option value="2">Chassi 2</option>
-                <option value="3">Chassi 3</option>
-                <option value="4">Chassi 4</option>
-                <option value="5">Chassi 5</option>
+                <option value="030317">030317</option>
+                <option value="030318">030318</option>
+                <option value="030319">030319</option>
+                <option value="030320">030320</option>
+                <option value="030321">030321</option>
             </select>
             <button id="filtrarOrdem" type="submit" class="btn btn-light" style=" margin-left: 10px;">Filtrar</button>
         </div>
@@ -150,6 +150,11 @@
                         <td>030320</td>
                         <td>14</td>
                         <td>54</td>
+                    </tr>
+                    <tr>
+                        <td>030321</td>
+                        <td>15</td>
+                        <td>55</td>
                     </tr>
                 </tbody>
             </table>
@@ -263,7 +268,7 @@
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td>05/07/2023</td>
+                            <td>06/08/2023</td>
                             <td>459575 - Tambor Freio - Eixo F6F5</td>
                             <td>3</td>
                         </tr>
@@ -283,5 +288,30 @@
         }
 })
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const filtrarButton = document.getElementById("filtrarOrdem");
+        filtrarButton.addEventListener("click", function() {
+            const select = document.getElementById("ordemproducao");
+            const selectedValues = Array.from(select.selectedOptions).map(option => option.value);
+
+            // Seleciona a tabela com o título "Ordem de Produção"
+            const tabelaOrdemProducao = document.querySelector(".table:nth-of-type(2)"); // A segunda tabela
+
+            // Seleciona apenas as linhas da tabela "Ordem de Produção"
+            const tableRows = tabelaOrdemProducao.querySelectorAll(".table__body tbody tr");
+            tableRows.forEach(row => {
+                const codigo = row.querySelector("td:first-child").textContent;
+                if (selectedValues.length === 0 || selectedValues.includes(codigo)) {
+                    row.style.display = "table-row";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
+
 
 {% endblock %}
